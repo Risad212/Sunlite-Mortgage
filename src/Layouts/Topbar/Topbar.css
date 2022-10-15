@@ -1,0 +1,43 @@
+.topbar .phone-wrapper li a span,i{
+   font-size: 14px;
+   font-weight: 600;
+   color: #000;
+}
+
+.topbar .email-button{
+    background: #FEAA36;
+    border: 1px solid #FEAA36;
+    padding: 0.6rem 0;
+}
+.topbar .email-button a{ 
+    height: auto;
+    line-height: 20px;
+    padding: 9.5px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.topbar .email-button:hover{
+    background: none;
+    color: #FEAA36;
+}
+.topbar .email-button:hover a{
+    color: #FEAA36;
+}
+
+@media screen and (max-width: 992px) {
+    .topbar .phone-wrapper{
+        margin: auto;
+        padding: 1rem 0;
+    }
+    .topbar .email-button{
+        margin: auto;
+    }
+    .topbar .phone-wrapper div i,span{
+        font-size: 1.2rem;
+    }
+}

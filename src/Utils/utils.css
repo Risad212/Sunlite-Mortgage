@@ -1,0 +1,67 @@
+/*[ RESTYLE TAG ]
+///////////////////////////////////////////////////////////
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+p,a.small,span,li{
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0px !important;
+}
+ a,link{
+    text-decoration: none !important;
+    color: #000;
+}
+body{
+    overflow-x: hidden;
+}
+/*-- common class --- */
+.section-title{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.section-subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: .9rem;
+    font-weight: 500;
+}
+
+.button{
+    text-transform: uppercase;
+    border: 1px solid #FEAA36;
+    outline: none;
+    font-weight: 400;
+    background-color: #FEAA36;
+    color: #FFFFFF;
+    padding: 9.5px 20px;
+    letter-spacing: normal;
+    line-height: 20px;
+    font-size: 14px;
+}
+.button:hover{
+    background: none;
+    color: #FEAA36;
+}
+.line{
+    border-color: #007167;
+    border-width: 1px;
+    width: 60px;
+    margin: 10px auto 30px;
+}
+.button a{
+    color: #000;
+}
+

@@ -1,0 +1,200 @@
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './Solutation.css';
+import Slider from 'react-slick';
+import CommonTItle from '../../Components/CommonTItle/CommonTItle';
+
+const Solutation = ({display}) => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
+  const soluTitle = {
+    title: 'Best Mortgage Solutions across',
+    position: true,
+  }
+  return (
+    <div className='py-5'>
+      <Container>
+        <div className='soltitle'>
+          <CommonTItle titleInfo={soluTitle}/>
+        </div>
+        <Slider {...settings}>
+          <div className='slider mt-5'>
+            <Row className="gy-3">
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+            </Row>
+          </div>
+          {/* second slider ------*/}
+          <div className='slider mt-5'>
+            <Row className='3'>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+              <Col lg="3" md="6" sm="6">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Ajax</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Amhersturg</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Auorora</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Barrie</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bellevile</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bracebridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Bradform web Gwillimbury</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brampton</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brant</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brandfor</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Brockville</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Burlington</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Caledon</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Cambridge</li>
+                    <li><i class="fa-solid fa-arrow-right-long me-2"></i>Central Elgin</li>
+                </ul>
+              </Col>
+            </Row>
+          </div>
+        </Slider>
+         {display == 'block'? (
+           <div className="ctaBtn mt-5 text-center">
+             <button className='button'><a href="#">Contact Sunlite Mortgage Brokers in Toronto, ON</a></button>
+          </div>
+         ): ''}
+       
+      </Container>
+    </div>
+  );
+};
+
+export default Solutation;
