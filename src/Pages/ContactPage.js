@@ -17,8 +17,8 @@ const ContactPage = () => {
         <div>
           <Topbar />
            <NavigationBar />
+            <CommonTItle titleInfo={commonTitle}/>
             <Contact />
-           <CommonTItle titleInfo={commonTitle}/>
            <Footer /> 
         </div>
     );
