@@ -30,9 +30,9 @@ const About = ({abInfo}) => {
                      {page == 'home'? (<h2 className='section-subtitle mb-0'>About</h2>): ''}
                      {page == 'home'? (<div><img alt="Mortgage Brokers Toronto" height="2" src={titleImg} width="77" class="line-img" /></div>): ''}
                      {page == 'home'? (<h2 className='section-title'>Sunlite Mortgage</h2>): ''}
-                      <p style={page == 'home'? ({width: '70%'}): ({width: '80%'})}>{page == 'home'? ('Sunlite Mortgage Alliance has been providing customized mortgage solutions to Canadian since 2003 and has seen many hanges in the mortgage industry. We work with over 100 mortgage lenders including, banks, credit unions, trust companies, and private lenders to help Canadians...'): (`
+                      <p className={page == 'home'? 'w-70' : 'w-80' }>{page == 'home'? ('Sunlite Mortgage Alliance has been providing customized mortgage solutions to Canadian since 2003 and has seen many hanges in the mortgage industry. We work with over 100 mortgage lenders including, banks, credit unions, trust companies, and private lenders to help Canadians...'): (`
                        Mortgage Alliance has been providing customized mortgage solutions to Canadians since 2003 and has seen many changes in the mortgage industry. We work with over 100 mortgage lenders including, banks, crcedit unions, trust companies, and private lenders to help Canadians whether they are first-time home buyers purchasing their first home, new to Canada, looking to transfer a mortgage, or refinancing an existing mortgage to consolidate debt, our team of mortgage agents can help you find the best mortgage solution.`)}</p>
-                      {page == 'home'? (<a href="#" className='button'>Read More</a>): ''}
+                      {page == 'home'? (<a href="#" className='button'>Read More</a>): <></>}
                  </div>
                </Col>
              </Row>
