@@ -77,7 +77,7 @@ const Contact = () => {
 
                                 <Form.Group className="mb-1" controlId="formBasicNumber">
                                     <Form.Label>Contact Number<span className='required'>*</span></Form.Label>
-                                    <Form.Control type="number" placeholder="(506) 234-5678" />
+                                    <Form.Control type="tel" placeholder="(506) 234-5678" />
                                 </Form.Group>
 
                                 <Form.Group className="mb-1" controlId="formBasicOrganizationName">
