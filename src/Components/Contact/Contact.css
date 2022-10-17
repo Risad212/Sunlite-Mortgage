@@ -46,3 +46,25 @@
 .contact-box p a{
     color: #FEAA36;
 }
+.required{
+    color: red;
+    font-size: 1rem;
+}
+
+
+.form-container {
+    border: 1px solid #555;
+    padding: 1rem;
+}
+.form-container label{
+    font-weight: 600;
+    color: #000;
+}
+.form-container input,.form-control{
+    border-radius: 0px !important;
+    padding: 0.275rem 0.75rem;
+}
+
+.form-container .formBtn button{
+
+}

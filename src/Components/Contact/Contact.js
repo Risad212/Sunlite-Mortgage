@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Contact.css';
 
@@ -48,6 +48,52 @@ const Contact = () => {
                             </div>
                             <h3>BUSINESS HOURS</h3>
                             <p>MON - FRI <br /> 08:30 AM - 07:00 PM</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col lg="6">
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5766.2369136475045!2d-79.329416!3d43.728866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5316e3c150b11752!2sSunlite%20Mortgage%20Alliance!5e0!3m2!1sen!2sin!4v1665975693708!5m2!1sen!2sin" style={{ width: '100%', height: '450px' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </Col>
+                    <Col lg="6">
+                        <div className="form-container">
+                            <Form>
+                                <Form.Group className="mb-1" controlId="formBasicFName">
+                                    <Form.Label>First Name<span className='required'>*</span></Form.Label>
+                                    <Form.Control type="text" placeholder="" />
+                                </Form.Group>
+
+                                <Form.Group className="mb-1" controlId="formBasicLName">
+                                    <Form.Label>Last Name<span className='required'>*</span></Form.Label>
+                                    <Form.Control type="text" placeholder="" />
+                                </Form.Group>
+
+                                <Form.Group className="mb-1" controlId="formBasicEmail">
+                                    <Form.Label>Email<span className='required'>*</span></Form.Label>
+                                    <Form.Control type="email" placeholder="" />
+                                </Form.Group>
+
+                                <Form.Group className="mb-1" controlId="formBasicNumber">
+                                    <Form.Label>Contact Number<span className='required'>*</span></Form.Label>
+                                    <Form.Control type="number" placeholder="(506) 234-5678" />
+                                </Form.Group>
+
+                                <Form.Group className="mb-1" controlId="formBasicOrganizationName">
+                                    <Form.Label>Your Organization</Form.Label>
+                                    <Form.Control type="text" placeholder="" />
+                                </Form.Group>
+
+                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                    <Form.Label>Message</Form.Label>
+                                    <Form.Control as="textarea" rows={3} />
+                                </Form.Group>
+
+                                <div className="formBtn">
+                                   <button className='button'>Submit</button>
+                                </div>
+                            </Form>
                         </div>
                     </Col>
                 </Row>
