@@ -25,6 +25,8 @@ ul{
 }
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: all .3s ease-in-out;
 }
 /*-- common class --- */
 .section-title{
@@ -54,12 +56,6 @@ body{
 .button:hover{
     background: none;
     color: #FEAA36;
-}
-.line{
-    border-color: #007167;
-    border-width: 1px;
-    width: 60px;
-    margin: 10px auto 30px;
 }
 .button a{
     color: #000;
