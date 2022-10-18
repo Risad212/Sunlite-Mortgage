@@ -55,11 +55,10 @@
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     border: none;
 }
-.card:hover:nth-child(1) img{
-    content: url('../../assets/Media/ser1.png');
-}
-.card:hover:nth-child(2) img{
-    content: url('../../assets/Media/ser2.png');
+.card img{
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
 }
 .card:hover::before{
     content: "";
@@ -77,12 +76,13 @@
 .card:hover .discription{
     z-index: 10;
 }
-.card img{
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
+/*-- set image when hover on card --*/
+.card:hover:nth-child(1) img{
+    content: url('../../assets/Media/ser1.png');
 }
-
+.card:hover:nth-child(2) img{
+    content: url('../../assets/Media/ser2.png');
+}
 
 /*-------- responsive --------- */
 @media screen and (max-width: 1200px) {
