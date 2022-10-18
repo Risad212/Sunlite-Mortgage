@@ -55,7 +55,7 @@
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     border: none;
 }
-.card:hover::before{
+/* .card:hover::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -64,7 +64,7 @@
     left: 0;
     z-index: 5;
     bottom: 0;
-}
+} */
 .card:hover h2{
     color: #fff;
 }
@@ -75,7 +75,8 @@
     width: 100%;
     position: relative;
 }
-.card:hover:nth-child(1)::before{
+
+/* .card:hover:nth-child(1)::before{
     background-image: url('../../assets/Media/ser1.png');
     background-position: center;
     background-size: cover;
@@ -84,7 +85,7 @@
     background-image: url('../../assets/Media/ser2.png');
     background-position: center;
     background-size: cover;
-}
+} */
 /* .card:nth-child(3):hover::before{
     background-image: url('../../assets/Media/ser3.png');
     background-position: center;

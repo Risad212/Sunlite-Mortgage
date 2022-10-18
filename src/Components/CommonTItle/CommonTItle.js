@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CommonTItle = ({titleInfo}) => {
-    console.log(titleInfo?.title)
     return (
         <div className={titleInfo?.position? "text-center my-3": 'my-3'}>
            <h1 class="section-title">{titleInfo?.title}</h1>
