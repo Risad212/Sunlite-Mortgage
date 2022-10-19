@@ -30,16 +30,6 @@
     min-height: 56px;
     line-height: 27px;
 }
-.card-wrapper .discription hr.line{
-    border-color: #007167;
-    border-width: 1px;
-    width: 60px;
-    margin: 10px auto 30px;
-}
-.card-wrapper .discription hr{
-    border: solid #DADADA;
-}
-
 .card-wrapper button{
     padding: 9px 30px;
     line-height: 20px;

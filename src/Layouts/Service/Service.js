@@ -9,6 +9,7 @@ import CardFour from '../../assets/Media/card4.png';
 import CardFive from '../../assets/Media/card5.png';
 import CardSix from '../../assets/Media/card6.png';
 
+
 const Service = () => {
     return (
         <>
@@ -27,7 +28,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-1">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={Card} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>mortgage Refinance</h2>
                                         <hr className='line' />
@@ -40,7 +41,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-2">
                                 <a href="#">
-                                    <img src={CardTow} className="img-fluid" alt="" />
+                                    <img src={CardTow} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Purchase</h2>
                                         <hr className='line' />
@@ -53,7 +54,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-3">
                                 <a href="#">
-                                    <img src={CardThree} className="img-fluid" alt="" />
+                                    <img src={CardThree} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Self Employed <br /> Mortgage</h2>
                                         <hr className='line' />
@@ -66,7 +67,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-4">
                                 <a href="#">
-                                    <img src={CardFour} className="img-fluid" alt="" />
+                                    <img src={CardFour} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Equity Line <br /> Of Credit</h2>
                                         <hr className='line' />
@@ -79,7 +80,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-5">
                                 <a href="#">
-                                    <img src={CardFive} className="img-fluid" alt="" />
+                                    <img src={CardFive} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Investment Property <br /> Mortgage</h2>
                                         <hr className='line' />
@@ -92,7 +93,7 @@ const Service = () => {
                         <div className="card-wrapper">
                             <div className="card cd-6">
                                 <a href="#">
-                                    <img src={CardSix} className="img-fluid" alt="" />
+                                    <img src={CardSix} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Reverse Mortgage</h2>
                                         <hr className='line' />
