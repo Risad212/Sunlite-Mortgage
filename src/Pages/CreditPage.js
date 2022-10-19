@@ -6,7 +6,7 @@ import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
 import ServiceBg from '../Components/ServiceBg/ServiceBg';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import crditImg from '../assets/Media/credit.pg.jpg';
 
 const CreditPage = () => {
@@ -19,7 +19,7 @@ const CreditPage = () => {
         It can be used for any type of investment or purchase. It is more flexible than most other loans and allows you to borrow any amount up to your limit. You only pay interest on the amount withdrawn and can choose when and how you repay the loan without additional penalties.`
       }
 
-    const commonTitle = {
+    const Title = {
         title: 'Home Equity Line of Credit Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
@@ -48,7 +48,7 @@ const CreditPage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <CommonTItle titleInfo={commonTitle}/>
+           <Title titleInfo={Title}/>
            <ServiceAbout abinfo={aboutInfo}/> 
            <ServiceBg info={serviceBg}/>
            <Content ctInfo={contentInfo}/>

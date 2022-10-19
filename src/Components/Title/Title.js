@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CommonTItle = ({titleInfo}) => {
+const Title = ({titleInfo}) => {
     return (
         <div className={titleInfo?.position? "text-center my-3": 'my-3'}>
            <h1 class="section-title">{titleInfo?.title}</h1>
@@ -10,4 +10,4 @@ const CommonTItle = ({titleInfo}) => {
     );
 };
 
-export default CommonTItle;
+export default Title;

@@ -1,5 +1,5 @@
 import React from 'react';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Layouts/Footer/Footer';
 import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
@@ -8,7 +8,7 @@ import Topbar from '../Layouts/Topbar/Topbar';
 const ContactPage = () => {
 
     // title 
-    const commonTitle = {
+    const Title = {
         title: 'Contact Sunlite Mortgage',
         subtitle: 'Mortgage Specialists Toronto | Mortgage Agents Toronto',
         position: true,
@@ -17,7 +17,7 @@ const ContactPage = () => {
         <div>
           <Topbar />
            <NavigationBar />
-            <CommonTItle titleInfo={commonTitle}/>
+            <Title titleInfo={Title}/>
             <Contact />
            <Footer /> 
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Topbar from '../Layouts/Topbar/Topbar';
 import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import purImg from '../assets/Media/pur.jpg';
 import ServiceBg from '../Components/ServiceBg/ServiceBg';
@@ -19,7 +19,7 @@ const PurchasePage = () => {
     }
 
     // common title 
-    const commonTitle ={
+    const Title ={
       title: 'Home Purchase Mortgage Services',
       subtitle: 'Mortgage Advisors /Specialists in Toronto, Ontario',
       position: true,
@@ -49,7 +49,7 @@ const PurchasePage = () => {
         <div>
           <Topbar />
           <NavigationBar /> 
-          <CommonTItle titleInfo={commonTitle}/>
+          <Title titleInfo={Title}/>
           <ServiceAbout abinfo={aboutInfo} />
           <ServiceBg info={sbginfo}/>
           <Content ctInfo={contentInfo}/>

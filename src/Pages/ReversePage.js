@@ -6,7 +6,7 @@ import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
 import ServiceBg from '../Components/ServiceBg/ServiceBg';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import revImg from '../assets/Media/reverse.jpg';
 
 const ReversePage = () => {
@@ -18,7 +18,7 @@ const ReversePage = () => {
         We are committed to helping you get the most out of your mortgage with the best rates and professional advice. We’ll sit down with you and explain what you stand to benefit as well as every disadvantage. You will be able to understand your options and make a well-informed decision.`
       }
 
-    const commonTitle = {
+    const Title = {
         title: 'Reverse Mortgage Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
@@ -48,7 +48,7 @@ const ReversePage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <CommonTItle titleInfo={commonTitle}/>
+           <Title titleInfo={Title}/>
            <ServiceAbout abinfo={aboutInfo}/> 
            <ServiceBg info={serviceBg}/>
            <Content ctInfo={contentInfo}/>

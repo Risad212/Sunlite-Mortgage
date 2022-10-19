@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import aboutImg from '../../assets/Media/about.png';
 import titleImg from '../../assets/Media/title.png';
-import CommonTItle from '../../Components/CommonTItle/CommonTItle';
+import Title from '../../Components/Title/Title';
 import './About.css';
 
 const About = ({abInfo}) => {
@@ -13,7 +13,7 @@ const About = ({abInfo}) => {
              <Row>
                <Col lg="12">
                  <div className="AboutHead mt-3 py-5 text-center">
-                      <CommonTItle titleInfo={abInfo}/>
+                      <Title titleInfo={abInfo}/>
                       {page == 'home'? (<p>Mortgage Refinance, Purchase Plus Improvements, Bad Credit, Construction, Home Equity Loan, Self Employed Mortgage Services & more</p>): <></>}
                       {page == 'home'? (<a href="#" className='ctaBtn button'>Contact Sunlite Mortgage - Toronto Mortgage Agents / Advisors</a>): <></> }
                  </div>

@@ -6,7 +6,7 @@ import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
 import ServiceBg from '../Components/ServiceBg/ServiceBg';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import invesImg from '../assets/Media/invesment.jpg';
 
 const InvestmentPage = () => {
@@ -18,7 +18,7 @@ const InvestmentPage = () => {
         If you are looking for an investment property mortgage, we’ll help you find the right lender and the most competitive rates. We do the negotiating for you so that you end up saving more - both time and money.`
       }
 
-    const commonTitle = {
+    const Title = {
         title: 'Investment Property Mortgage Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
@@ -46,7 +46,7 @@ const InvestmentPage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <CommonTItle titleInfo={commonTitle}/>
+           <Title titleInfo={Title}/>
            <ServiceAbout abinfo={aboutInfo}/> 
            <ServiceBg info={serviceBg}/>
            <Content ctInfo={contentInfo}/>

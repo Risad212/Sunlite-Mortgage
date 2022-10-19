@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import CommonTItle from '../CommonTItle/CommonTItle';
+import Title from '../Title/Title';
 import './ServiceAbout.css';
 
 
@@ -14,7 +14,7 @@ const ServiceAbout = ({abinfo}) => {
           </Col>
           <Col lg="6" className='d-flex align-items-center'>
             <div>
-              <CommonTItle titleInfo={abinfo}/>
+              <Title titleInfo={abinfo}/>
               <p className='mt-2'>{abinfo?.disc}</p>
             </div>
           </Col>

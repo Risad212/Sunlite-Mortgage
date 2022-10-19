@@ -1,7 +1,7 @@
 import React from 'react';
 import Topbar from '../Layouts/Topbar/Topbar';
 import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
-import CommonTItle from '../Components/CommonTItle/CommonTItle';
+import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import ServiceBg from '../Components/ServiceBg/ServiceBg';
 import Content from '../Components/Content/Content';
@@ -18,7 +18,7 @@ const EmployedPage = () => {
       }
 
       // common title 
-    const commonTitle ={
+    const Title ={
         title: 'Self-Employed Mortgage Services',
         subtitle: 'Mortgage Advisors /Specialists in Toronto, ON',
         position: true,
@@ -48,7 +48,7 @@ const EmployedPage = () => {
         <div>
             <Topbar />
             <NavigationBar />
-            <CommonTItle titleInfo={commonTitle}/>
+            <Title titleInfo={Title}/>
             <ServiceAbout abinfo={aboutInfo} />
             <ServiceBg info={serviceBg}/>
             <Content ctInfo={contentInfo}/>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Container, Row, } from 'react-bootstrap';
-import CommonTItle from '../CommonTItle/CommonTItle';
+import Title from '../Title/Title';
 import TitleHead from '../TitleHead/TitleHead';
 import TitleList from '../TitleList/TitleList';
 import './ServiceBg.css';
@@ -17,13 +17,13 @@ const ServiceBg = ({ info }) => {
                             <Row>
                                 <Col>
                                     <div className='varLine px-3'>
-                                        <CommonTItle titleInfo={null} />
+                                        <Title titleInfo={null} />
                                         <p>{disc ? disc : ''}</p>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className='px-3'>
-                                        <CommonTItle titleInfo={null} />
+                                        <Title titleInfo={null} />
                                         <ul className='titleList mt-3'>
                                             {
                                                 list ? (list.map(elem => {

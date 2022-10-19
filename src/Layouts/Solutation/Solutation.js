@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Solutation.css';
 import Slider from 'react-slick';
-import CommonTItle from '../../Components/CommonTItle/CommonTItle';
+import Title from '../../Components/Title/Title';
 
 const Solutation = ({display}) => {
   var settings = {
@@ -21,7 +21,7 @@ const Solutation = ({display}) => {
     <div className='py-5'>
       <Container>
         <div className='soltitle'>
-          <CommonTItle titleInfo={soluTitle}/>
+          <Title titleInfo={soluTitle}/>
         </div>
         <Slider {...settings}>
           <div className='slider mt-5'>
