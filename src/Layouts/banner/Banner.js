@@ -3,6 +3,7 @@ import './Banner.css';
 import BgImg from '../../assets/Media/banner.jpg';
 import RifImg from '../../assets/Media/refincjpg.jpg';
 import blogImg from '../../assets/Media/blogBg.jpg';
+import { Link } from 'react-router-dom';
 
 const Banner = ({ page }) => {
     return (
@@ -14,7 +15,7 @@ const Banner = ({ page }) => {
                     </a>
                     <div className="bannerDes">
                         <h1 class="banner-title">Providing Customized Mortgage Solutions<br />To Canadians Since 2003</h1>
-                        <button className='button'>Get In touch</button>
+                        <button className='button'><Link to='/contact'>Get In touch</Link></button>
                     </div>
                 </div>
             )}

@@ -53,12 +53,14 @@ body{
     line-height: 20px;
     font-size: 14px;
 }
+.button a{
+    color: #FFFFFF;
+}
 .button:hover{
     background: none;
-    color: #FEAA36;
 }
-.button a{
-    color: #000;
+.button:hover a{
+    color: #FEAA36;
 }
 
 /*-- hr tag style -- */
