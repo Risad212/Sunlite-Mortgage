@@ -3,6 +3,11 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Service.css';
 import Titleimg from '../../assets/Media/title.png';
 import Card from '../../assets/Media/card.png';
+import CardTow from '../../assets/Media/card2.png';
+import CardThree from '../../assets/Media/card3.png';
+import CardFour from '../../assets/Media/card4.png';
+import CardFive from '../../assets/Media/card5.png';
+import CardSix from '../../assets/Media/card6.png';
 
 const Service = () => {
     return (
@@ -20,7 +25,7 @@ const Service = () => {
                     </Row>
                     <div className='card-main mt-3'>
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-1">
                                 <a href="#">
                                     <img src={Card} className="img-fluid" alt="" />
                                     <div className="discription">
@@ -33,9 +38,9 @@ const Service = () => {
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-2">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={CardTow} className="img-fluid" alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Purchase</h2>
                                         <hr className='line' />
@@ -46,9 +51,9 @@ const Service = () => {
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-3">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={CardThree} className="img-fluid" alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Self Employed <br /> Mortgage</h2>
                                         <hr className='line' />
@@ -59,9 +64,9 @@ const Service = () => {
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-4">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={CardFour} className="img-fluid" alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Equity Line <br /> Of Credit</h2>
                                         <hr className='line' />
@@ -72,9 +77,9 @@ const Service = () => {
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-5">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={CardFive} className="img-fluid" alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Investment Property <br /> Mortgage</h2>
                                         <hr className='line' />
@@ -85,9 +90,9 @@ const Service = () => {
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
-                            <div className="card">
+                            <div className="card cd-6">
                                 <a href="#">
-                                    <img src={Card} className="img-fluid" alt="" />
+                                    <img src={CardSix} className="img-fluid" alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Reverse Mortgage</h2>
                                         <hr className='line' />
