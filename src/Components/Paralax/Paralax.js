@@ -17,13 +17,13 @@ const Paralax = ({ info }) => {
                             <Row>
                                 <Col>
                                     <div className='varLine px-3'>
-                                        <Title titleInfo={null} />
+                                        <Title titleInfo={{title: titleOne}} />
                                         <p>{disc ? disc : ''}</p>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className='px-3'>
-                                        <Title titleInfo={null} />
+                                      <Title titleInfo={{title: titleTow}} />
                                         <ul className='titleList mt-3'>
                                             {
                                                 list ? (list.map(elem => {
@@ -61,13 +61,13 @@ const Paralax = ({ info }) => {
                             <Row>
                                 <Col className='d-flex align-items-center'>
                                     <div className='varLine px-3 BHeight'>
-                                        <TitleHead title={titleOne ? titleOne : ''} />
+                                      <Title titleInfo={{title: titleOne}} />
                                         <p>{disc ? disc : ''}</p>
                                     </div>
                                 </Col>
                                 <Col>
                                     <div className='px-3'>
-                                        <TitleHead title={titleTow ? titleTow : ''} />
+                                      <Title titleInfo={{title: titleTow}} />
                                         <p>{parag ? parag : ''}</p>
                                         <ul className='titleList mt-3'>
                                             {
@@ -87,13 +87,13 @@ const Paralax = ({ info }) => {
                                 <Row>
                                     <Col>
                                         <div className='varLine px-3'>
-                                            <TitleHead title={titleOne ? titleOne : ''} />
+                                           <Title titleInfo={{title: titleOne}} />
                                             <p>{disc ? disc : ''}</p>
                                         </div>
                                     </Col>
                                     <Col>
                                         <div className='px-3'>
-                                            <TitleHead title={titleTow ? titleTow : ''} />
+                                           <Title titleInfo={{title: titleTow}} />
                                             <ul className='titleList mt-3'>
                                                 {
                                                     list ? (list.map(elem => {
@@ -112,7 +112,7 @@ const Paralax = ({ info }) => {
                                 <Row>
                                     <Col>
                                         <div className='varLine px-3 sHeight'>
-                                            <TitleHead title={titleOne ? titleOne : ''} />
+                                            <Title titleInfo={{title: titleOne}} />
                                             <p>{disc ? disc : ''}</p>
                                         </div>
                                     </Col>
@@ -136,13 +136,13 @@ const Paralax = ({ info }) => {
                                 <Row>
                                     <Col>
                                         <div className='varLine px-3'>
-                                            <TitleHead title={titleOne ? titleOne : ''} />
+                                           <Title titleInfo={{title: titleOne}} />
                                             <p>{disc ? disc : ''}</p>
                                         </div>
                                     </Col>
                                     <Col>
                                         <div className='px-3'>
-                                            <TitleHead title={titleTow ? titleTow : ''} />
+                                            <Title titleInfo={{title: titleTow}} />
                                             <ul className='titleList mt-3'>
                                                 {
                                                     list ? (list.map(elem => {
