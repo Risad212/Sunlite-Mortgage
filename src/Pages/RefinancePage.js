@@ -5,7 +5,7 @@ import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
 import Banner from '../Layouts/banner/Banner';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import Content from '../Components/Content/Content';
 import refImg from '../assets/Media/ref.jpg';
 
@@ -21,7 +21,7 @@ const RefinancePage = () => {
       }
     
       // service background info
-      const sbginfo = {
+      const paralaxInfo = {
         titleOne: 'What Is Mortgage Refinancing?',
         titleTow: 'Benefits Of Refinancing Your Mortgage',
         disc: 'Refinancing is replacing your existing mortgage with a new loan. The new loan will have different interest rates and payment terms and will pay off your current mortgage balance. When done right, you will end up with additional funds at your disposal for other financial goals. Also, if your finances and credit score have improved since purchasing your home - you will have access to better mortgage options and lower interest rates.',
@@ -47,7 +47,7 @@ const RefinancePage = () => {
            <NavigationBar />
            <Banner page="refinance"/>
            <ServiceAbout abinfo={aboutInfo} />
-           <ServiceBg info={sbginfo}/>
+           <Paralax info={paralaxInfo}/>
            <Content ctInfo={contentInfo}/>
            <Solutation display="block"/>
            <Footer />

@@ -4,7 +4,7 @@ import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Title from '../Components/Title/Title';
 import revImg from '../assets/Media/reverse.jpg';
@@ -18,14 +18,14 @@ const ReversePage = () => {
         We are committed to helping you get the most out of your mortgage with the best rates and professional advice. We’ll sit down with you and explain what you stand to benefit as well as every disadvantage. You will be able to understand your options and make a well-informed decision.`
       }
 
-    const Title = {
+    const titleObj = {
         title: 'Reverse Mortgage Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
     }
 
-    // service bg
-    const serviceBg = {
+    // paralax background page information
+    const paralaxInfo = {
         titleOne: 'What Is A Reverse Mortgage?',
         disc: 'With a reverse mortgage, you borrow funds from a lender against a portion of your home equity. Unlike a regular mortgage, where you make regular payments to the lender, the lender pays you. You do not have to sell your home and can continue to live there. The amount you can borrow depends on factors like age, home value, and the lender. The loan does not have to be repaid until the last borrower vacates the property, sells the home, or passes away. When this happens, either the heirs of the home can repay the lender to keep the home or the home is sold to repay the loan. The proceeds go to the homeowner’s estate if the house sells for more than the loan amount and its associated costs.',
         titleTow: 'Homeowners Usually Consider A Reverse Mortgage For The Following Reasons',
@@ -48,9 +48,9 @@ const ReversePage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <Title titleInfo={Title}/>
+           <Title titleInfo={titleObj}/>
            <ServiceAbout abinfo={aboutInfo}/> 
-           <ServiceBg info={serviceBg}/>
+           <Paralax info={paralaxInfo}/>
            <Content ctInfo={contentInfo}/>
            <Solutation display="block"/>
            <Footer />  

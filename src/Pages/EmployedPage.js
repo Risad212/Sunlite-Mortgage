@@ -3,7 +3,7 @@ import Topbar from '../Layouts/Topbar/Topbar';
 import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
 import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import Content from '../Components/Content/Content';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
@@ -18,14 +18,14 @@ const EmployedPage = () => {
       }
 
       // common title 
-    const Title ={
+    const titleObj ={
         title: 'Self-Employed Mortgage Services',
         subtitle: 'Mortgage Advisors /Specialists in Toronto, ON',
         position: true,
       }
 
     // service bg
-    const serviceBg = {
+    const paralaxInfo = {
       titleOne: 'What Is A Self-Employed Mortgage?',
       disc: 'A self-employed mortgage is specifically designed for people that run their own businesses. These mortgages will have different requirements than traditional mortgages to accommodate the needs of self-employed persons. It is best to seek the advice of an experienced mortgage specialist to help you understand the process and get the right mortgage fit.',
       titleTow: 'Finding The Right Mortgage',
@@ -48,9 +48,9 @@ const EmployedPage = () => {
         <div>
             <Topbar />
             <NavigationBar />
-            <Title titleInfo={Title}/>
+            <Title titleInfo={titleObj}/>
             <ServiceAbout abinfo={aboutInfo} />
-            <ServiceBg info={serviceBg}/>
+            <Paralax info={paralaxInfo}/>
             <Content ctInfo={contentInfo}/>
             <Solutation display="block"/>
             <Footer />

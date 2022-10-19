@@ -4,7 +4,7 @@ import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Title from '../Components/Title/Title';
 import invesImg from '../assets/Media/invesment.jpg';
@@ -18,14 +18,14 @@ const InvestmentPage = () => {
         If you are looking for an investment property mortgage, we’ll help you find the right lender and the most competitive rates. We do the negotiating for you so that you end up saving more - both time and money.`
       }
 
-    const Title = {
+    const titleObj = {
         title: 'Investment Property Mortgage Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
     }
 
     // service Bg
-    const serviceBg = {
+    const paralaxInfo = {
       titleOne: 'What Is An Investment Property Mortgage?',
       disc: 'An investment property generally means real estate that is purchased with the intent to generate income. Most investment property mortgages require a 20% down payment. This helps you qualify for a longer amortization period of around 30 years. An investment property helps provide -',
       list: [
@@ -46,9 +46,9 @@ const InvestmentPage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <Title titleInfo={Title}/>
+           <Title titleInfo={titleObj}/>
            <ServiceAbout abinfo={aboutInfo}/> 
-           <ServiceBg info={serviceBg}/>
+           <Paralax info={paralaxInfo}/>
            <Content ctInfo={contentInfo}/>
            <Solutation display="block"/>
            <Footer /> 

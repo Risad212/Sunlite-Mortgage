@@ -8,7 +8,7 @@ import Topbar from '../Layouts/Topbar/Topbar';
 const ContactPage = () => {
 
     // title 
-    const Title = {
+    const titleObj = {
         title: 'Contact Sunlite Mortgage',
         subtitle: 'Mortgage Specialists Toronto | Mortgage Agents Toronto',
         position: true,
@@ -17,7 +17,7 @@ const ContactPage = () => {
         <div>
           <Topbar />
            <NavigationBar />
-            <Title titleInfo={Title}/>
+            <Title titleInfo={titleObj}/>
             <Contact />
            <Footer /> 
         </div>

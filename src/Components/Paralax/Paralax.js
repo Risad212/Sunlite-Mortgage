@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Container, Row, } from 'react-bootstrap';
 import Title from '../Title/Title';
 import TitleHead from '../TitleHead/TitleHead';
-import TitleList from '../TitleList/TitleList';
-import './ServiceBg.css';
+import ParalaxList from '../ParalaxList/ParalaxList';
+import './Paralax.css';
 
-const ServiceBg = ({ info }) => {
+const Paralax = ({ info }) => {
     const { titleOne, titleTow, disc, list, parag, page } = info;
 
     return (
@@ -27,7 +27,7 @@ const ServiceBg = ({ info }) => {
                                         <ul className='titleList mt-3'>
                                             {
                                                 list ? (list.map(elem => {
-                                                    return <TitleList item={elem} />
+                                                    return <ParalaxList item={elem} />
                                                 })) : (
                                                     ''
                                                 )
@@ -46,7 +46,7 @@ const ServiceBg = ({ info }) => {
                                         <ul className='titleList mt-3'>
                                             {
                                                 list ? (list.map(elem => {
-                                                    return <TitleList item={elem} />
+                                                    return <ParalaxList item={elem} />
                                                 })) : (
                                                     ''
                                                 )
@@ -72,7 +72,7 @@ const ServiceBg = ({ info }) => {
                                         <ul className='titleList mt-3'>
                                             {
                                                 list ? (list.map(elem => {
-                                                    return <TitleList item={elem} />
+                                                    return <ParalaxList item={elem} />
                                                 })) : (
                                                     ''
                                                 )
@@ -97,7 +97,7 @@ const ServiceBg = ({ info }) => {
                                             <ul className='titleList mt-3'>
                                                 {
                                                     list ? (list.map(elem => {
-                                                        return <TitleList item={elem} />
+                                                        return <ParalaxList item={elem} />
                                                     })) : (
                                                         ''
                                                     )
@@ -121,7 +121,7 @@ const ServiceBg = ({ info }) => {
                                             <ul className='titleList mt-3'>
                                                 {
                                                     list ? (list.map(elem => {
-                                                        return <TitleList item={elem} />
+                                                        return <ParalaxList item={elem} />
                                                     })) : (
                                                         ''
                                                     )
@@ -146,7 +146,7 @@ const ServiceBg = ({ info }) => {
                                             <ul className='titleList mt-3'>
                                                 {
                                                     list ? (list.map(elem => {
-                                                        return <TitleList item={elem} />
+                                                        return <ParalaxList item={elem} />
                                                     })) : (
                                                         ''
                                                     )
@@ -162,4 +162,4 @@ const ServiceBg = ({ info }) => {
     );
 };
 
-export default ServiceBg;
+export default Paralax;

@@ -4,13 +4,12 @@ import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Title from '../Components/Title/Title';
 import crditImg from '../assets/Media/credit.pg.jpg';
 
 const CreditPage = () => {
- 
      // service info 
      const aboutInfo = {
         img: crditImg,
@@ -19,14 +18,15 @@ const CreditPage = () => {
         It can be used for any type of investment or purchase. It is more flexible than most other loans and allows you to borrow any amount up to your limit. You only pay interest on the amount withdrawn and can choose when and how you repay the loan without additional penalties.`
       }
 
-    const Title = {
+    // title info
+    const titleObj = {
         title: 'Home Equity Line of Credit Services',
         subtitle: 'Mortgage Advisors / Agents in Toronto, Ontario',
         position: true,
     }
     
     // serviceBg
-    const serviceBg = {
+    const ParalxInfo = {
         titleOne: 'What Is Home Equity?',
         titleTow: 'Benefits Of A Home Equity Line Of Credit',
         disc: 'When you take out a mortgage on your home, you repay the lender through smaller payments over a period of years. As you repay the loan, your home equity increases. The amount of equity you have will depend on the current market value of your home minus the amount of any outstanding loans against the property. Unlike other loans, you can borrow as much as you need (up to your limit) whenever you need it without repeating the approval process.',
@@ -48,9 +48,9 @@ const CreditPage = () => {
         <div>
            <Topbar />
            <NavigationBar />
-           <Title titleInfo={Title}/>
+           <Title titleInfo={titleObj}/>
            <ServiceAbout abinfo={aboutInfo}/> 
-           <ServiceBg info={serviceBg}/>
+           <Paralax info={ParalxInfo}/>
            <Content ctInfo={contentInfo}/>
            <Solutation display="block"/>
            <Footer />

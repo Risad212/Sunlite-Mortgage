@@ -4,7 +4,7 @@ import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import purImg from '../assets/Media/pur.jpg';
-import ServiceBg from '../Components/ServiceBg/ServiceBg';
+import Paralax from '../Components/Paralax/Paralax';
 import Footer from '../Layouts/Footer/Footer';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Content from '../Components/Content/Content';
@@ -19,7 +19,7 @@ const PurchasePage = () => {
     }
 
     // common title 
-    const Title ={
+    const titleObj ={
       title: 'Home Purchase Mortgage Services',
       subtitle: 'Mortgage Advisors /Specialists in Toronto, Ontario',
       position: true,
@@ -27,7 +27,7 @@ const PurchasePage = () => {
 
 
     // service background info
-    const sbginfo = {
+    const paralaxInfo = {
       disc: 'Refinancing is replacing your existing mortgage with a new loan. The new loan will have different interest rates and payment terms and will pay off your current mortgage balance. When done right, you will end up with additional funds at your disposal for other financial goals. Also, if your finances and credit score have improved since purchasing your home - you will have access to better mortgage options and lower interest rates.',
       list: [
           'Take advantage of lower interest rates',
@@ -49,9 +49,9 @@ const PurchasePage = () => {
         <div>
           <Topbar />
           <NavigationBar /> 
-          <Title titleInfo={Title}/>
+          <Title titleInfo={titleObj}/>
           <ServiceAbout abinfo={aboutInfo} />
-          <ServiceBg info={sbginfo}/>
+          <Paralax info={paralaxInfo}/>
           <Content ctInfo={contentInfo}/>
           <Solutation display="block"/>
           <Footer />
