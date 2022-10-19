@@ -1,4 +1,4 @@
-.ServiceBg{
+.Paralax{
     padding: 5rem 0;
     background-image: url(../../assets/Media/ser-page-img.jpg);
     background-size: 100% 100%;
@@ -6,7 +6,7 @@
     width: 100% !important;
 }
 
-.ServiceBg{
+.Paralax{
     color: #fff;
 }
 .varLine{

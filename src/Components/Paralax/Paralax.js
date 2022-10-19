@@ -10,7 +10,7 @@ const Paralax = ({ info }) => {
 
     return (
         <>
-            <div className="ServiceBg">
+            <div className="Paralax">
                 <Container>
                     {
                         page == 'refine' && (
