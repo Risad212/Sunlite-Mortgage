@@ -28,13 +28,13 @@ const Footer = () => {
               <h4>FOLLOW US</h4>
               <Row>
                 <Col>
-                <ul className='social-icon'>
-                <li><a href='/https://www.facebook.com/sunlitemortgage/'><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href='http://www.twitter.com/sunlitemortgage'><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href='https://www.linkedin.com/sunlitemortgagealliance'><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href='https://www.instagram.com/sunlitemortgage/'><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href='https://www.yelp.com/biz/sunlite-mortgage-alliance-north-york'><i class="fa-brands fa-yelp"></i></a></li>
-              </ul>
+                  <ul className='social-icon'>
+                    <li><a href='/https://www.facebook.com/sunlitemortgage/'><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href='http://www.twitter.com/sunlitemortgage'><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href='https://www.linkedin.com/sunlitemortgagealliance'><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href='https://www.instagram.com/sunlitemortgage/'><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href='https://www.yelp.com/biz/sunlite-mortgage-alliance-north-york'><i class="fa-brands fa-yelp"></i></a></li>
+                  </ul>
                 </Col>
               </Row>
             </Col>
@@ -62,7 +62,7 @@ const Footer = () => {
           </Row>
         </Container>
         <div className="copy-write">
-          <span>© 2022 Sunlite Mortgage. Powered By  <a href="#">Webware.io</a></span>
+          <span>© 2022 Sunlite Mortgage. Powered By  <a href="http://webware.io/">Webware.io</a></span>
         </div>
       </footer>
     </>

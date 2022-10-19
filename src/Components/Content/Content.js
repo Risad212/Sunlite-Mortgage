@@ -8,7 +8,7 @@ const Content = ({ctInfo}) => {
     return (
         <div className='content text-center'>
             <Container>
-                <Title title={title? title: 'null'}/>
+                <Title titleInfo={title}/>
                  <p className='mt-2'>{disc? disc: ''}
                  <strong className='mt-2 d-block'>{shortDisc? shortDisc: ''}</strong>
                 </p>

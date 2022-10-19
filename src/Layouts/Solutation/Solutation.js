@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Solutation.css';
 import Slider from 'react-slick';
 import Title from '../../Components/Title/Title';
+import { Link } from 'react-router-dom';
 
 const Solutation = ({display}) => {
   var settings = {
@@ -188,7 +189,7 @@ const Solutation = ({display}) => {
         </Slider>
          {display == 'block'? (
            <div className="ctaBtn mt-5 text-center">
-             <button className='button'><a href="#">Contact Sunlite Mortgage Brokers in Toronto, ON</a></button>
+             <button className='button'><Link to="/contact">Contact Sunlite Mortgage Brokers in Toronto, ON</Link></button>
           </div>
          ): ''}
        

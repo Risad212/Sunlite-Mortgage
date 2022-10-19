@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/Media/logo.png'
 import './Topbar.css';
 
@@ -12,27 +13,27 @@ const Topbar = () => {
                         <Col lg="4" md="12" className="my-1 d-flex align-items-center order-lg-first order-md-second order-sm-second">
                             <ul className="phone-wrapper d-flex">
                                 <li className='me-4'>
-                                    <a href="#">
+                                    <Link to="/">
                                         <i class="fa-solid fa-phone me-2"></i>
                                         <span>(0123)-654-789</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <Link to="/">
                                         <i class="fa-solid fa-phone me-2"></i>
                                         <span>(0123)-654-789</span>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </Col>
                         <Col lg="4" md="12" className="my-1 order-lg-second order-md-first order-sm-first">
                             <div className="text-center">
-                                <img src={Logo} alt="" className='img-fluid'/>
+                                <Link to="/"><img src={Logo} alt="" className='img-fluid'/></Link>
                             </div>
                         </Col>
                         <Col lg="4" md="12" className="my-3 d-flex align-items-center justify-content-center">
                             <div className='email-button'>
-                                <a href="#">E-mail Now</a>
+                                <Link to="/contact">E-mail Now</Link>
                             </div>
                         </Col>
                     </Row>
