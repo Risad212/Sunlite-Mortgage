@@ -63,11 +63,8 @@ body{
 
 /*-- hr tag style -- */
 hr.line{
-    border-color: #007167;
-    border-width: 1px;
     width: 60px;
+    border: 0;
+    border-bottom: 3px solid  #007167;
     margin: 10px auto 30px;
-}
-.line{
-    border: solid #DADADA;
 }
