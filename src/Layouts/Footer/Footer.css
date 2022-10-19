@@ -17,6 +17,12 @@ footer ul li{
     color: #fff;
     margin: auto;
 }
+footer ul li a,a:hover{
+    color: #fff;
+}
+footer ul li a:hover{
+    color: #fff;
+}
 footer ul li i{
     font-size: 2.5rem;
     color: #fff;
@@ -25,6 +31,7 @@ footer .social-icon{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1em
+   
 }
 footer .button{
     background: none;

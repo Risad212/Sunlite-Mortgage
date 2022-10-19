@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,26 +12,31 @@ const Footer = () => {
             <Col lg="3" md="6" sm="12">
               <h4>links</h4>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Mortgage Refinance</li>
-                <li>Home Purchase</li>
-                <li>Employed Mortgage</li>
-                <li>Home Equity Line Of Credit</li>
-                <li>Reverse Mortgage</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/refinance">Mortgage Refinance</Link></li>
+                <li><Link to="/purchase">Home Purchase</Link></li>
+                <li><Link to="/employed">Self Employed Mortgage</Link></li>
+                <li><Link to="/credit">Home Equity Line Of Credit</Link></li>
+                <li><Link to="/invesment">Investment Property Mortgage</Link></li>
+                <li><Link to="/reverse">Reverse Mortgage</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </Col>
             <Col lg="3" md="6" sm="12">
               <h4>FOLLOW US</h4>
-              <ul className='social-icon'>
-                <li><i class="fa-brands fa-square-facebook"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-square-instagram"></i></li>
-                <li><i class="fa-brands fa-yelp"></i></li>
+              <Row>
+                <Col>
+                <ul className='social-icon'>
+                <li><a href='/https://www.facebook.com/sunlitemortgage/'><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href='http://www.twitter.com/sunlitemortgage'><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href='https://www.linkedin.com/sunlitemortgagealliance'><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href='https://www.instagram.com/sunlitemortgage/'><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href='https://www.yelp.com/biz/sunlite-mortgage-alliance-north-york'><i class="fa-brands fa-yelp"></i></a></li>
               </ul>
+                </Col>
+              </Row>
             </Col>
             <Col lg="3" md="6">
               <h4>SUBSCRIBE</h4>

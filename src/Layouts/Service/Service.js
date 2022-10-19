@@ -8,6 +8,7 @@ import CardThree from '../../assets/Media/card3.png';
 import CardFour from '../../assets/Media/card4.png';
 import CardFive from '../../assets/Media/card5.png';
 import CardSix from '../../assets/Media/card6.png';
+import { Link } from 'react-router-dom';
 
 
 const Service = () => {
@@ -27,79 +28,79 @@ const Service = () => {
                     <div className='card-main mt-3'>
                         <div className="card-wrapper">
                             <div className="card cd-1">
-                                <a href="#">
+                                <Link to="/refinance">
                                     <img src={Card} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>mortgage Refinance</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/refinance">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
                             <div className="card cd-2">
-                                <a href="#">
+                                <Link to="/employed">
                                     <img src={CardTow} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Purchase</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/employed">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
                             <div className="card cd-3">
-                                <a href="#">
+                                <Link href="#">
                                     <img src={CardThree} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Self Employed <br /> Mortgage</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/credit">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
                             <div className="card cd-4">
-                                <a href="#">
+                                <Link href="#">
                                     <img src={CardFour} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Home Equity Line <br /> Of Credit</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/invesment">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
                             <div className="card cd-5">
-                                <a href="#">
+                                <Link to="/invesment">
                                     <img src={CardFive} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Investment Property <br /> Mortgage</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/invesment">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         {/*----- Column -----*/}
                         <div className="card-wrapper">
                             <div className="card cd-6">
-                                <a href="#">
+                                <Link href="#">
                                     <img src={CardSix} alt="" />
                                     <div className="discription">
                                         <h2 className='section-subtitle'>Reverse Mortgage</h2>
                                         <hr className='line' />
-                                        <button className='button'><a href="#">Learn More</a></button>
+                                        <button className='button'><Link to="/reverse">Learn More</Link></button>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
