@@ -92,31 +92,20 @@
 }
 
 /*---- responsive ----- */
-@media screen and (max-width: 1200px) {
-    .card-wrapper{
-        width: 90%;
-    }
-    .card-wrapper .discription{
-        top: 0;
-    }
-    .card-wrapper .discription h2{
-        font-size: 1.3rem;
-        padding: 0;
-    }
-    .card-wrapper .discription .line{
-        margin: 5px auto 30px
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .card-main{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-}
-
 @media screen and (max-width: 768px) {
-    .card-main{
-        grid-template-columns: repeat(1,1fr);
+    .card-wrapper{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-wrapper{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-wrapper{
+        width: 70%;
     }
 }

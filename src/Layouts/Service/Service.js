@@ -16,7 +16,7 @@ const Service = () => {
         <>
             <div className="service">
                 <Container>
-                    <Row>
+                    <Row className='mb-3'>
                         <Col lg="12">
                             <div className="ServiceHead text-center">
                                 <h2 className='section-subtitle mb-0 pb-0'>Services</h2>
@@ -26,24 +26,22 @@ const Service = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <div className='card-main mt-3'>
-                                <div className="card-wrapper">
-                                    <div className="card cd-1">
-                                        <Link to="/refinance">
-                                            <img src={Card} alt="" />
-                                            <div className="discription">
-                                                <h2 className='section-subtitle'>mortgage Refinance</h2>
-                                                <hr className='line' />
-                                                <button className='button'><Link to="/refinance">Learn More</Link></button>
-                                            </div>
-                                        </Link>
-                                    </div>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
+                            <div className="card-wrapper">
+                                <div className="card cd-1">
+                                    <Link to="/employed">
+                                        <img src={Card} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Home Purchase</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/employed">Learn More</Link></button>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
                         {/*----- Column -----*/}
-                        <Col>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
                             <div className="card-wrapper">
                                 <div className="card cd-2">
                                     <Link to="/employed">
@@ -58,7 +56,7 @@ const Service = () => {
                             </div>
                         </Col>
                         {/*----- Column -----*/}
-                        <Col>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
                             <div className="card-wrapper">
                                 <div className="card cd-3">
                                     <Link href="#">
@@ -73,7 +71,7 @@ const Service = () => {
                             </div>
                         </Col>
                         {/*----- Column -----*/}
-                        <Col>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
                             <div className="card-wrapper">
                                 <div className="card cd-4">
                                     <Link href="#">
@@ -88,7 +86,7 @@ const Service = () => {
                             </div>
                         </Col>
                         {/*----- Column -----*/}
-                        <Col>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
                             <div className="card-wrapper">
                                 <div className="card cd-5">
                                     <Link to="/invesment">
@@ -103,7 +101,7 @@ const Service = () => {
                             </div>
                         </Col>
                         {/*----- Column -----*/}
-                        <Col>
+                        <Col lg="4" md="6" sm="12" className='d-flex justify-content-center'>
                             <div className="card-wrapper">
                                 <div className="card cd-6">
                                     <Link href="#">
@@ -118,8 +116,8 @@ const Service = () => {
                             </div>
                         </Col>
                     </Row>
-            </Container>
-         </div>
+                </Container>
+            </div>
         </>
     );
 };
