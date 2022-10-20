@@ -25,87 +25,101 @@ const Service = () => {
                             </div>
                         </Col>
                     </Row>
-                    <div className='card-main mt-3'>
-                        <div className="card-wrapper">
-                            <div className="card cd-1">
-                                <Link to="/refinance">
-                                    <img src={Card} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>mortgage Refinance</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/refinance">Learn More</Link></button>
+                    <Row>
+                        <Col>
+                            <div className='card-main mt-3'>
+                                <div className="card-wrapper">
+                                    <div className="card cd-1">
+                                        <Link to="/refinance">
+                                            <img src={Card} alt="" />
+                                            <div className="discription">
+                                                <h2 className='section-subtitle'>mortgage Refinance</h2>
+                                                <hr className='line' />
+                                                <button className='button'><Link to="/refinance">Learn More</Link></button>
+                                            </div>
+                                        </Link>
                                     </div>
-                                </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Col>
                         {/*----- Column -----*/}
-                        <div className="card-wrapper">
-                            <div className="card cd-2">
-                                <Link to="/employed">
-                                    <img src={CardTow} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>Home Purchase</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/employed">Learn More</Link></button>
-                                    </div>
-                                </Link>
+                        <Col>
+                            <div className="card-wrapper">
+                                <div className="card cd-2">
+                                    <Link to="/employed">
+                                        <img src={CardTow} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Home Purchase</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/employed">Learn More</Link></button>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Col>
                         {/*----- Column -----*/}
-                        <div className="card-wrapper">
-                            <div className="card cd-3">
-                                <Link href="#">
-                                    <img src={CardThree} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>Self Employed <br /> Mortgage</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/credit">Learn More</Link></button>
-                                    </div>
-                                </Link>
+                        <Col>
+                            <div className="card-wrapper">
+                                <div className="card cd-3">
+                                    <Link href="#">
+                                        <img src={CardThree} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Self Employed <br /> Mortgage</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/credit">Learn More</Link></button>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Col>
                         {/*----- Column -----*/}
-                        <div className="card-wrapper">
-                            <div className="card cd-4">
-                                <Link href="#">
-                                    <img src={CardFour} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>Home Equity Line <br /> Of Credit</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/invesment">Learn More</Link></button>
-                                    </div>
-                                </Link>
+                        <Col>
+                            <div className="card-wrapper">
+                                <div className="card cd-4">
+                                    <Link href="#">
+                                        <img src={CardFour} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Home Equity Line <br /> Of Credit</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/invesment">Learn More</Link></button>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Col>
                         {/*----- Column -----*/}
-                        <div className="card-wrapper">
-                            <div className="card cd-5">
-                                <Link to="/invesment">
-                                    <img src={CardFive} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>Investment Property <br /> Mortgage</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/invesment">Learn More</Link></button>
-                                    </div>
-                                </Link>
+                        <Col>
+                            <div className="card-wrapper">
+                                <div className="card cd-5">
+                                    <Link to="/invesment">
+                                        <img src={CardFive} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Investment Property <br /> Mortgage</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/invesment">Learn More</Link></button>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Col>
                         {/*----- Column -----*/}
-                        <div className="card-wrapper">
-                            <div className="card cd-6">
-                                <Link href="#">
-                                    <img src={CardSix} alt="" />
-                                    <div className="discription">
-                                        <h2 className='section-subtitle'>Reverse Mortgage</h2>
-                                        <hr className='line' />
-                                        <button className='button'><Link to="/reverse">Learn More</Link></button>
-                                    </div>
-                                </Link>
+                        <Col>
+                            <div className="card-wrapper">
+                                <div className="card cd-6">
+                                    <Link href="#">
+                                        <img src={CardSix} alt="" />
+                                        <div className="discription">
+                                            <h2 className='section-subtitle'>Reverse Mortgage</h2>
+                                            <hr className='line' />
+                                            <button className='button'><Link to="/reverse">Learn More</Link></button>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </Container>
-            </div>
+                        </Col>
+                    </Row>
+            </Container>
+         </div>
         </>
     );
 };
