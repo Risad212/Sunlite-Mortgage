@@ -40,6 +40,7 @@ const RefinancePage = () => {
         title: 'Connect With Our Mortgage Experts',
         disc: 'At Sunlite Mortgage Alliance, we will assess your current financial situation and help you understand whether refinancing is the right choice. We’ll break down the costs and penalties of refinancing and weigh them against the benefits. Our mortgage experts will evaluate every detail to ensure you benefit from the process and save more in the long run. We will also help you understand how to borrow funds against your home equity. Trust our experienced mortgage agents to find the most competitive rates and guide you through the entire process.',
         shortDisc: 'Are you considering refinancing your mortgage? Talk to us before you do. We’ll advise you on the right way forward.',
+        position: true,
       }
     return (
         <div>

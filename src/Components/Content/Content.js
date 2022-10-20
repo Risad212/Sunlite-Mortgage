@@ -4,11 +4,11 @@ import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
 
 const Content = ({ctInfo}) => {
-    const {title, disc, shortDisc} = ctInfo;
+    const {title, disc, shortDisc,position} = ctInfo;
     return (
         <div className='content text-center'>
             <Container>
-                <Title titleInfo={title}/>
+                <Title titleInfo={{title: title, position: position}}/>
                  <p className='mt-2'>{disc? disc: ''}
                  <strong className='mt-2 d-block'>{shortDisc? shortDisc: ''}</strong>
                 </p>
