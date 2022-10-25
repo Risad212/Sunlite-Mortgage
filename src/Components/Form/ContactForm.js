@@ -1,22 +1,22 @@
-import React, { useRef } from 'react';
-import { Form } from 'react-bootstrap';
+import React, { useRef, useState } from 'react';
+import {Form } from 'react-bootstrap';
 import './ContactForm.css';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_7qya74t','template_vde93za', form.current, 'cRBwueB5Z253m4eiD')
       .then((result) => {
-          console.log(result.text);
+          if(result.text){
+             alert('Thank you for contact us. As early as possible  we will contact you')
+          }
       }, (error) => {
-          console.log(error.text);
+          alert(error)
       });
       e.target.reset()
   }
-
 
     return (
         <>
