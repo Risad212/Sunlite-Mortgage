@@ -1,55 +1,58 @@
-import React, { useRef, useState } from 'react';
-import {Form } from 'react-bootstrap';
-import './ContactForm.css';
-import emailjs from '@emailjs/browser';
+import React from "react";
+import { useState } from "react";
+import { Form } from "react-bootstrap";
+import "./ContactForm.css";
+
 
 const ContactForm = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_7qya74t','template_vde93za', form.current, 'cRBwueB5Z253m4eiD')
-      .then((result) => {
-          if(result.text){
-             alert('Thank you for contact us. As early as possible  we will contact you')
-          }
-      }, (error) => {
-          alert(error)
-      });
-      e.target.reset()
-  }
+    const [formInfo, setFormInfo] = useState({
+        fname: '',
+        lname: '',
+        email: '',
+        number: '',
+        companyName: '',
+        message: ''
+    })
+    
+   const handleSubmit = (e) =>{
+     e.preventDefault()
+     const newinfo = {...formInfo}
 
+     console.log(newinfo)
+   }
+   
     return (
         <>
             <div className="form-container">
-                <Form ref={form} onSubmit={sendEmail}>
+                <Form action="#" onSubmit={handleSubmit}>
                     <Form.Group className="mb-1" controlId="formBasicFName">
                         <Form.Label>First Name<span className='required'>*</span></Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_Fname"/>
+                        <Form.Control type="text" placeholder="" name="user_Fname" onChange={(e) => setFormInfo({fname: e.target.value})}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicLName">
                         <Form.Label>Last Name<span className='required'>*</span></Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_lname"/>
+                        <Form.Control type="text" placeholder="" name="user_lname" onChange={(e) => setFormInfo({lname: e.target.value})}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicEmail">
                         <Form.Label>Email<span className='required'>*</span></Form.Label>
-                        <Form.Control type="email" placeholder="" name="user_email"/>
+                        <Form.Control type="email" placeholder="" name="user_email" onChange={(e) => setFormInfo({email: e.target.value})}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicNumber">
                         <Form.Label>Contact Number<span className='required'>*</span></Form.Label>
-                        <Form.Control type="tel" placeholder="(506) 234-5678" name="user_number"/>
+                        <Form.Control type="tel" placeholder="(506) 234-5678" name="user_number" onChange={(e) => setFormInfo({number: e.target.value})}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicOrganizationName">
                         <Form.Label>Your Organization</Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_companyName"/>
+                        <Form.Control type="text" placeholder="" name="user_companyName" onChange={(e) => setFormInfo({companyName: e.target.value})}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows={3} name="user_message"/>
+                        <Form.Control as="textarea" rows={3} name="user_message" onChange={(e) => setFormInfo({message: e.target.value})}/>
                     </Form.Group>
 
                     <div className="formBtn">

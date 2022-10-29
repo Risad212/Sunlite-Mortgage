@@ -6,7 +6,6 @@ import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
 import Topbar from '../Layouts/Topbar/Topbar';
 
 const ContactPage = () => {
-
     // title 
     const titleObj = {
         title: 'Contact Sunlite Mortgage',
