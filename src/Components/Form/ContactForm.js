@@ -14,45 +14,44 @@ const ContactForm = () => {
         message: ''
     })
     
-   const handleSubmit = (e) =>{
-     e.preventDefault()
-     const newinfo = {...formInfo}
+    const handleOnChange = (input,e) => {
+        // setFormInfo({input: e.target.value});
+        console.log(input,e)
+    }
+    const {fname,lname,email,number,companyName,message} = formInfo
 
-     console.log(newinfo)
-   }
-   
     return (
         <>
             <div className="form-container">
-                <Form action="#" onSubmit={handleSubmit}>
+                <Form action="#">
                     <Form.Group className="mb-1" controlId="formBasicFName">
                         <Form.Label>First Name<span className='required'>*</span></Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_Fname" onChange={(e) => setFormInfo({fname: e.target.value})}/>
+                        <Form.Control type="text" value={fname} placeholder="" name="user_Fname" onChange={handleOnChange('fname')}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicLName">
                         <Form.Label>Last Name<span className='required'>*</span></Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_lname" onChange={(e) => setFormInfo({lname: e.target.value})}/>
+                        <Form.Control type="text" value={lname}placeholder="" name="lname" onChange={handleOnChange('lname')}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicEmail">
                         <Form.Label>Email<span className='required'>*</span></Form.Label>
-                        <Form.Control type="email" placeholder="" name="user_email" onChange={(e) => setFormInfo({email: e.target.value})}/>
+                        <Form.Control type="email" value={email}placeholder="" name="user_email" onChange={handleOnChange}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicNumber">
                         <Form.Label>Contact Number<span className='required'>*</span></Form.Label>
-                        <Form.Control type="tel" placeholder="(506) 234-5678" name="user_number" onChange={(e) => setFormInfo({number: e.target.value})}/>
+                        <Form.Control type="tel" value={number}placeholder="(506) 234-5678" name="user_number" onChange={handleOnChange}/>
                     </Form.Group>
 
                     <Form.Group className="mb-1" controlId="formBasicOrganizationName">
                         <Form.Label>Your Organization</Form.Label>
-                        <Form.Control type="text" placeholder="" name="user_companyName" onChange={(e) => setFormInfo({companyName: e.target.value})}/>
+                        <Form.Control type="text" value={companyName}placeholder="" name="user_companyName" onChange={handleOnChange}/>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control as="textarea" rows={3} name="user_message" onChange={(e) => setFormInfo({message: e.target.value})}/>
+                        <Form.Control as="textarea" rows={3} value={message}name="user_message" onChange={handleOnChange}/>
                     </Form.Group>
 
                     <div className="formBtn">

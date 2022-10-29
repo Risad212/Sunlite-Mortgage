@@ -1,69 +1,66 @@
 import React, {Component} from 'react';
 
 class Form extends Component {
-    state = {
-        name: '',
+    formInfo = {
+        fname: '',
+        lname: '',
         email: '',
-        message: '',
-        emailStatus: ''
+        number: '',
+        companyName: '',
+        message: ''
     };
 
     // handle the value
     handleCHange = input => e => {
-        this.setState({[input]: e.target.value});
+        this.setFormInfo({[input]: e.target.value});
     }
 
     // when submit btn is clicked
     submitForm = (e) => {
-        const {name, email, message} = this.state;
-
-
-        // create a new XMLHttpRequest
-        var xhr = new XMLHttpRequest();
-    
-        // get a callback when the server responds
-        xhr.addEventListener('load', () => {
-            // update the response state and the step
-            
-            this.setState ({
-                emailStatus: xhr.responseText
-            });
-        });
-        // open the request with the verb and the url
-        xhr.open('GET', 'https://www.baten.me/risad/build/index.php?sendto=' + email + 
-                                '&name=' + name + 
-                                '&message=' + message);
-        // send the request
-        xhr.send();
-
-        // reset the fields
-        this.setState({
-            name: '',
-            email: '',
-            message: ''
-        });
+        const {fname,lname, email, message, number, companyName,} = this.state;
         e.preventDefault();
     }
 
     render(){
-        const {name, email, message, emailStatus} = this.state;
+        const {fname,lname, email, message, number, companyName,} = this.state;
         return(
             <div className="formBlock" onSubmit={this.submitForm}>
                 {emailStatus ? emailStatus : null}
-                <form>
-                    <label>
-                        <input type="text" value={name} onChange={this.handleCHange('name')} placeholder="Name" />
-                    </label>
-                    <label>
-                        <input type="text" value={email} onChange={this.handleCHange('email')} placeholder="Email" />
-                    </label>
-                    <label>
-                        <textarea type="text" value={message} onChange={this.handleCHange('message')} placeholder="Message"></textarea>
-                    </label>
-                    <label>
-                        <input type="submit" className="submitBtn" value="Submit" />
-                    </label>
-                </form>
+                <Form action="#">
+                    <Form.Group className="mb-1" controlId="formBasicFName">
+                        <Form.Label>First Name<span className='required'>*</span></Form.Label>
+                        <Form.Control type="text" value={fname} placeholder="" name="user_Fname" onChange={handleOnChange('fname')}/>
+                    </Form.Group>
+
+                    <Form.Group className="mb-1" controlId="formBasicLName">
+                        <Form.Label>Last Name<span className='required'>*</span></Form.Label>
+                        <Form.Control type="text" value={lname}placeholder="" name="lname" onChange={handleOnChange('lname')}/>
+                    </Form.Group>
+
+                    <Form.Group className="mb-1" controlId="formBasicEmail">
+                        <Form.Label>Email<span className='required'>*</span></Form.Label>
+                        <Form.Control type="email" value={email}placeholder="" name="user_email" onChange={handleOnChange}/>
+                    </Form.Group>
+
+                    <Form.Group className="mb-1" controlId="formBasicNumber">
+                        <Form.Label>Contact Number<span className='required'>*</span></Form.Label>
+                        <Form.Control type="tel" value={number}placeholder="(506) 234-5678" name="user_number" onChange={handleOnChange}/>
+                    </Form.Group>
+
+                    <Form.Group className="mb-1" controlId="formBasicOrganizationName">
+                        <Form.Label>Your Organization</Form.Label>
+                        <Form.Control type="text" value={companyName}placeholder="" name="user_companyName" onChange={handleOnChange}/>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" rows={3} value={message}name="user_message" onChange={handleOnChange}/>
+                    </Form.Group>
+
+                    <div className="formBtn">
+                        <input className='button' type="submit" value="Submit" />
+                    </div>
+                </Form>
             </div>
         );
     }
