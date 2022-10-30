@@ -3,7 +3,6 @@ import { Container, Row, Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Contact.css';
 import ContactForm from '../Form/ContactForm';
-import Form from '../Form/Form';
 
 const Contact = () => {
     return (
@@ -60,7 +59,6 @@ const Contact = () => {
                     </Col>
                     <Col lg="6">
                       <ContactForm />
-                      <Form />
                     </Col>
                 </Row>
             </Container>
