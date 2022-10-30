@@ -4,6 +4,7 @@ import './ContactForm.css'
 const ContactForm = () => {
 
   const handleSubmit = (e) => {
+    e.preventDefault()
     const formElements = e.target.elements
     const data = {
       fname: formElements.fname.value,
@@ -35,13 +36,6 @@ const ContactForm = () => {
     xhr.send();
 
     // reset the fields
-    this.setState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    e.preventDefault()
     e.target.reset()
   }
 
