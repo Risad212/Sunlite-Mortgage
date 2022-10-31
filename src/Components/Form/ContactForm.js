@@ -1,7 +1,10 @@
 import { Form } from 'react-bootstrap'
 import './ContactForm.css'
+import { useState,useEffect } from 'react';
+
 
 const ContactForm = () => {
+  const [formInfo,setFormInfo] = useState()
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -15,28 +18,21 @@ const ContactForm = () => {
       message: formElements.message.value,
     }
 
-    const {fname,lname,email,number,companyName,message} = data;
-    
-    // create a new XMLHttpRequest
-    var xhr = new XMLHttpRequest();
-    
-    // get a callback when the server responds
-    xhr.addEventListener('load', () => {
-        // update the response state and the step
-        
-        this.setState ({
-            emailStatus: xhr.responseText
-        });
-    });
-    // open the request with the verb and the url
-    xhr.open('GET', 'https://baten.me/risad/sendemail/index.php?sendto=' + email + 
-                            '&fname=' + fname + 
-                            '&message=' + message + '&lname=' + lname + '&number=' + number + '&message=' + message + '&companyName'+ companyName);
-    // send the request
-    xhr.send();
+    console.log(typeof data)
+    // method 3
+    //--------------------
+    fetch('http://localhost:5000/send', {
+      method: 'POST',
+      body: JSON.stringify({data}),
+      headers: {'Content-Type': 'application/json'}
+   })
+   .then(res => res.json())
+   .then(data => {
+     console.log(data)
+   })
 
     // reset the fields
-    e.target.reset()
+    // e.target.reset()
   }
 
   return (
