@@ -54,7 +54,7 @@ const Contact = () => {
                 <Row>
                     <Col lg="6">
                         <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5766.2369136475045!2d-79.329416!3d43.728866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5316e3c150b11752!2sSunlite%20Mortgage%20Alliance!5e0!3m2!1sen!2sin!4v1665975693708!5m2!1sen!2sin" style={{ width: '100%', height: '450px' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5766.2369136475045!2d-79.329416!3d43.728866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5316e3c150b11752!2sSunlite%20Mortgage%20Alliance!5e0!3m2!1sen!2sin!4v1665975693708!5m2!1sen!2sin" style={{ width: '100%', height: '450px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </Col>
                     <Col lg="6">

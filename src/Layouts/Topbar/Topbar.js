@@ -14,13 +14,13 @@ const Topbar = () => {
                             <ul className="phone-wrapper d-flex">
                                 <li className='me-4'>
                                     <Link to="/">
-                                        <i class="fa-solid fa-phone me-2"></i>
+                                        <i className="fa-solid fa-phone me-2"></i>
                                         <span>(0123)-654-789</span>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/">
-                                        <i class="fa-solid fa-phone me-2"></i>
+                                        <i className="fa-solid fa-phone me-2"></i>
                                         <span>(0123)-654-789</span>
                                     </Link>
                                 </li>

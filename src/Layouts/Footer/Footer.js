@@ -29,11 +29,11 @@ const Footer = () => {
               <Row>
                 <Col>
                   <ul className='social-icon'>
-                    <li><a href='/https://www.facebook.com/sunlitemortgage/'><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href='http://www.twitter.com/sunlitemortgage'><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href='https://www.linkedin.com/sunlitemortgagealliance'><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href='https://www.instagram.com/sunlitemortgage/'><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href='https://www.yelp.com/biz/sunlite-mortgage-alliance-north-york'><i class="fa-brands fa-yelp"></i></a></li>
+                    <li><a href='/https://www.facebook.com/sunlitemortgage/'><i className="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href='http://www.twitter.com/sunlitemortgage'><i className="fa-brands fa-twitter"></i></a></li>
+                    <li><a href='https://www.linkedin.com/sunlitemortgagealliance'><i className="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href='https://www.instagram.com/sunlitemortgage/'><i className="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href='https://www.yelp.com/biz/sunlite-mortgage-alliance-north-york'><i className="fa-brands fa-yelp"></i></a></li>
                   </ul>
                 </Col>
               </Row>
