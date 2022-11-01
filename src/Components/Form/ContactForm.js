@@ -1,11 +1,8 @@
-import { Form } from 'react-bootstrap'
+import Form from 'react-bootstrap'
 import './ContactForm.css'
-import { useState,useEffect } from 'react';
 
 
 const ContactForm = () => {
-  const [formInfo,setFormInfo] = useState()
-
   const handleSubmit = (e) => {
     e.preventDefault()
     const formElements = e.target.elements
@@ -18,21 +15,16 @@ const ContactForm = () => {
       message: formElements.message.value,
     }
 
-    console.log(typeof data)
-    // method 3
-    //--------------------
     fetch('http://localhost:5000/send', {
-      method: 'POST',
-      body: JSON.stringify({data}),
-      headers: {'Content-Type': 'application/json'}
-   })
-   .then(res => res.json())
-   .then(data => {
-     console.log(data)
-   })
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(data),
+    })
+    .then(res => console.log(res.json()))
+    .then(err => console.log(err))
 
-    // reset the fields
-    // e.target.reset()
+    // clear all field
+    e.target.reset()
   }
 
   return (
