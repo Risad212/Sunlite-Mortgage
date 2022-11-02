@@ -21,27 +21,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // method number 2
-    //-----------------------------
-    // const formElements = e.target.elements
-    // const data = {
-    //   fname: formElements.fname.value,
-    //   lname: formElements.lname.value,
-    //   email: formElements.email.value,
-    //   number: formElements.number.value,
-    //   companyName: formElements.companyName.value,
-    //   message: formElements.message.value,
-    // }
-
-  
-    fetch('http://localhost:5000/send', {
+    fetch('https://sunliteemail.herokuapp.com/send', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(formInfo),
     })
-    .then(res => console.log(res.json()))
-    .then(err => console.log(err))
-
+    .then(res => alert('Thank you for contact us. As early as possible  we will contact you.'))
+    .catch(err => console.log(err))
     // clear all field
     e.target.reset()
   }
