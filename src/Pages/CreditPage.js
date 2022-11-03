@@ -8,6 +8,7 @@ import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Title from '../Components/Title/Title';
 import crditImg from '../assets/Media/credit.pg.jpg';
+import HeadTag from '../Components/HeadTag/HeadTag';
 
 const CreditPage = () => {
      // service info 
@@ -44,8 +45,14 @@ const CreditPage = () => {
         disc: 'At Sunlite Mortgage Alliance, we help you access the right type of financing to improve your life and secure your future. We have helped numerous homeowners understand how home equity works and how they can use it to their advantage. As experienced mortgage advisors, we guide you through the entire process, explain every requisite, assist you with the paperwork, and ensure you benefit the most. You get financial clarity, professional advice, and a smooth and easy approval process.',
         shortDisc: 'Are you looking to tap into your home equity? We’ll help you understand your options and guide you through the process.',
       }
+
+      // head tag meta tag 
+      const HeadTagInfo = {
+        title: 'Home Equity Line Of Credit',
+      }
     return (
         <div>
+           <HeadTag tagInfo={HeadTagInfo}/>
            <Topbar />
            <NavigationBar />
            <Title titleInfo={titleObj}/>

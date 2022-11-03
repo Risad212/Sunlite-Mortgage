@@ -8,6 +8,7 @@ import Content from '../Components/Content/Content';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Footer from '../Layouts/Footer/Footer';
 import empImg from '../assets/Media/emp.jpg';
+import HeadTag from '../Components/HeadTag/HeadTag';
 
 const EmployedPage = () => {
     const aboutInfo = {
@@ -44,8 +45,15 @@ const EmployedPage = () => {
       disc: 'We’ll help you with every requirement and look through every detail to ensure you stand to benefit the most from the entire mortgage process. Whether you are self-employed or do not qualify for a traditional mortgage, speak with our mortgage agents. We’ll help you understand your options and get you closer to owning your dream home.',
       shortDisc: 'Are you finding it difficult to secure a mortgage because you are self-employed? Connect with us to find the right financing options for your home.',
     }
+
+    
+    const HeadTagInfo = {
+      title: 'Self Employed Mortgage',
+    }
+
     return (
         <div>
+            <HeadTag tagInfo={HeadTagInfo}/>
             <Topbar />
             <NavigationBar />
             <Title titleInfo={titleObj}/>

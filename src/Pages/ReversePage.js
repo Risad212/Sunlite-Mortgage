@@ -8,6 +8,7 @@ import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Title from '../Components/Title/Title';
 import revImg from '../assets/Media/reverse.jpg';
+import HeadTag from '../Components/HeadTag/HeadTag';
 
 const ReversePage = () => {
      // service info 
@@ -44,8 +45,13 @@ const ReversePage = () => {
         disc: 'While there can be many benefits from reverse mortgages, there are drawbacks too. This includes a higher interest rate and a decrease in equity. Come talk to our mortgage experts at Sunlite Mortgage Alliance. We will help you understand how a reverse mortgage decreases your home equity and the restrictions involved. We will weigh every pro and con so you can make a confident decision. It is essential to be aware of any fees or hidden terms and know what can cause you to default. At Sunlite Mortgage Alliance, we ask the questions for you so that you stand to benefit the most from your mortgage. We will evaluate every detail and advise you whether a reverse mortgage is the right option for you. We know it can be challenging to navigate this alone; that’s why we are here to help you.',
         shortDisc: 'Are you considering a reverse mortgage? We’re here to help. Connect with us to understand your options and take the right step towards a financially secure future.',
       }
+
+      const HeadTagInfo = {
+        title: 'Reverse Mortgage',
+      }
     return (
         <div>
+           <HeadTag tagInfo={HeadTagInfo}/>
            <Topbar />
            <NavigationBar />
            <Title titleInfo={titleObj}/>
