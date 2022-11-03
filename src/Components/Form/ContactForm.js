@@ -20,38 +20,13 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-<<<<<<< HEAD
-    fetch('https://sunliteemail.herokuapp.com/send', {
+    fetch('http://localhost:5000/send', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(formInfo),
     })
     .then(res => alert('Thank you for contact us. As early as possible  we will contact you.'))
     .catch(err => console.log(err))
-=======
-    // method number 2
-    //-----------------------------
-    // const formElements = e.target.elements
-    // const data = {
-    //   fname: formElements.fname.value,
-    //   lname: formElements.lname.value,
-    //   email: formElements.email.value,
-    //   number: formElements.number.value,
-    //   companyName: formElements.companyName.value,
-    //   message: formElements.message.value,
-    // }
-
-    const res = await fetch('http://localhost:5000/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formInfo),
-    })
-    const data = await res.json()
-    console.log(data)
-
->>>>>>> 2a9c81eec5671b8702a6f638ce6a89de01243779
-    // clear all field
-    e.target.reset()
   }
 
   return (
