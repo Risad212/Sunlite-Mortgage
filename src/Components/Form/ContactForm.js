@@ -20,13 +20,16 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch('http://localhost:5000/send', {
+    fetch('https://sunliteemail.herokuapp.com/send', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(formInfo),
     })
     .then(res => alert('Thank you for contact us. As early as possible  we will contact you.'))
     .catch(err => console.log(err))
+
+    // clear all field
+    e.target.reset()
   }
 
   return (

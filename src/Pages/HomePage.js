@@ -18,6 +18,8 @@ const HomePage = () => {
 
     const HeadTagInfo = {
       title: 'Home',
+      metaDis: 'Sunlite Mortgage Agents are some of the best trained mortgage agents in Canada and operate by the highest standard of mortgage brokering. In every situation',
+      metaKey: 'Meta keyword for HomePage',
     }
     return (
         <div>

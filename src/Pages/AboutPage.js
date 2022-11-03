@@ -13,6 +13,8 @@ const AboutPage = () => {
 
    const HeadTagInfo = {
     title: 'about',
+    metaDis: 'Sunlite Mortgage is one of Toronto, Canada’s leading mortgage brokerages. We offer a wide selection of mortgage to suit your mortgage needs.',
+    metaKey: 'Meta keyword for About Page',
   }
 
     return (
