@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import {Form} from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import './ContactForm.css'
 
-
 const ContactForm = () => {
-  const [formInfo,setFormInfo] = useState({
+  const [formInfo, setFormInfo] = useState({
     fname: '',
     lname: '',
     email: '',
@@ -14,13 +13,14 @@ const ContactForm = () => {
   })
 
   const handleOnChange = (e) => {
-    const newFormInfo = {...formInfo}
+    const newFormInfo = { ...formInfo }
     newFormInfo[e.target.name] = e.target.value
     setFormInfo(newFormInfo)
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+<<<<<<< HEAD
     fetch('https://sunliteemail.herokuapp.com/send', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -28,6 +28,28 @@ const ContactForm = () => {
     })
     .then(res => alert('Thank you for contact us. As early as possible  we will contact you.'))
     .catch(err => console.log(err))
+=======
+    // method number 2
+    //-----------------------------
+    // const formElements = e.target.elements
+    // const data = {
+    //   fname: formElements.fname.value,
+    //   lname: formElements.lname.value,
+    //   email: formElements.email.value,
+    //   number: formElements.number.value,
+    //   companyName: formElements.companyName.value,
+    //   message: formElements.message.value,
+    // }
+
+    const res = await fetch('http://localhost:5000/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formInfo),
+    })
+    const data = await res.json()
+    console.log(data)
+
+>>>>>>> 2a9c81eec5671b8702a6f638ce6a89de01243779
     // clear all field
     e.target.reset()
   }
@@ -40,38 +62,52 @@ const ContactForm = () => {
             <Form.Label>
               First Name<span className="required">*</span>
             </Form.Label>
-            <Form.Control type="text" name="fname" onChange={handleOnChange}/>
+            <Form.Control type="text" name="fname" onChange={handleOnChange} />
           </Form.Group>
 
           <Form.Group className="mb-1" controlId="formBasicLName">
             <Form.Label>
               Last Name<span className="required">*</span>
             </Form.Label>
-            <Form.Control type="text" name="lname" onChange={handleOnChange}/>
+            <Form.Control type="text" name="lname" onChange={handleOnChange} />
           </Form.Group>
 
           <Form.Group className="mb-1" controlId="formBasicEmail">
             <Form.Label>
               Email<span className="required">*</span>
             </Form.Label>
-            <Form.Control type="email" name="email" onChange={handleOnChange}/>
+            <Form.Control type="email" name="email" onChange={handleOnChange} />
           </Form.Group>
 
           <Form.Group className="mb-1" controlId="formBasicNumber">
             <Form.Label>
               Contact Number<span className="required">*</span>
             </Form.Label>
-            <Form.Control type="tel" placeholder="(506) 234-5678" name="number" onChange={handleOnChange}/>
+            <Form.Control
+              type="tel"
+              placeholder="(506) 234-5678"
+              name="number"
+              onChange={handleOnChange}
+            />
           </Form.Group>
 
           <Form.Group className="mb-1" controlId="formBasicOrganizationName">
             <Form.Label>Your Organization</Form.Label>
-            <Form.Control type="text" name="companyName" onChange={handleOnChange}/>
+            <Form.Control
+              type="text"
+              name="companyName"
+              onChange={handleOnChange}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} name="message" onChange={handleOnChange}/>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              name="message"
+              onChange={handleOnChange}
+            />
           </Form.Group>
 
           <div className="formBtn">
