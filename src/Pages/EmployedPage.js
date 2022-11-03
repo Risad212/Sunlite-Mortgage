@@ -1,12 +1,9 @@
 import React from 'react';
-import Topbar from '../Layouts/Topbar/Topbar';
-import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
 import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Paralax from '../Components/Paralax/Paralax';
 import Content from '../Components/Content/Content';
 import Solutation from '../Layouts/Solutation/Solutation';
-import Footer from '../Layouts/Footer/Footer';
 import empImg from '../assets/Media/emp.jpg';
 import HeadTag from '../Components/HeadTag/HeadTag';
 
@@ -54,14 +51,11 @@ const EmployedPage = () => {
     return (
         <div>
             <HeadTag tagInfo={HeadTagInfo}/>
-            <Topbar />
-            <NavigationBar />
             <Title titleInfo={titleObj}/>
             <ServiceAbout abinfo={aboutInfo} />
             <Paralax info={paralaxInfo}/>
             <Content ctInfo={contentInfo}/>
             <Solutation display="block"/>
-            <Footer />
         </div>
     );
 };

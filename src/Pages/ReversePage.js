@@ -1,8 +1,5 @@
 import React from 'react';
-import Topbar from '../Layouts/Topbar/Topbar';
-import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Solutation from '../Layouts/Solutation/Solutation';
-import Footer from '../Layouts/Footer/Footer';
 import Content from '../Components/Content/Content';
 import Paralax from '../Components/Paralax/Paralax';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
@@ -52,14 +49,11 @@ const ReversePage = () => {
     return (
         <div>
            <HeadTag tagInfo={HeadTagInfo}/>
-           <Topbar />
-           <NavigationBar />
            <Title titleInfo={titleObj}/>
            <ServiceAbout abinfo={aboutInfo}/> 
            <Paralax info={paralaxInfo}/>
            <Content ctInfo={contentInfo}/>
-           <Solutation display="block"/>
-           <Footer />  
+           <Solutation display="block"/> 
         </div>
     );
 };

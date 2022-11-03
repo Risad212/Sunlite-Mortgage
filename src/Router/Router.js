@@ -10,10 +10,13 @@ import InvestmentPage from '../Pages/InvestmentPage';
 import PurchasePage from '../Pages/PurchasePage';
 import Refinance from '../Pages/RefinancePage'
 import ReversePage from '../Pages/ReversePage';
+import Footer from '../Layouts/Footer/Footer';
+import Header from '../Layouts/Header/Header';
 
 const Router = () => {
     return (
         <BrowserRouter>
+           <Header />
            <Routes>
              <Route exact path='/' element={<HomePage />} />
              <Route path='/home' element={<HomePage />} />
@@ -27,6 +30,7 @@ const Router = () => {
              <Route path='/blog' element={<BlogPage />} />
              <Route path='/contact' element={<ContactPage />} />
            </Routes>
+           <Footer />
         </BrowserRouter>
     );
 };

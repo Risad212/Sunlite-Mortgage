@@ -1,8 +1,5 @@
 import React from 'react';
-import Topbar from '../Layouts/Topbar/Topbar';
-import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Solutation from '../Layouts/Solutation/Solutation';
-import Footer from '../Layouts/Footer/Footer';
 import Banner from '../Layouts/banner/Banner';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import Paralax from '../Components/Paralax/Paralax';
@@ -51,14 +48,11 @@ const RefinancePage = () => {
     return (
         <div>
            <HeadTag tagInfo={HeadTagInfo}/>
-           <Topbar />
-           <NavigationBar />
            <Banner page="refinance"/>
            <ServiceAbout abinfo={aboutInfo} />
            <Paralax info={paralaxInfo}/>
            <Content ctInfo={contentInfo}/>
            <Solutation display="block"/>
-           <Footer />
         </div>
     );
 };

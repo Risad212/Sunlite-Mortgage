@@ -1,9 +1,6 @@
 import React from 'react';
 import Title from '../Components/Title/Title';
 import Contact from '../Components/Contact/Contact';
-import Footer from '../Layouts/Footer/Footer';
-import NavigationBar from '../Layouts/NavigationBar/NavigationBar';
-import Topbar from '../Layouts/Topbar/Topbar';
 import HeadTag from '../Components/HeadTag/HeadTag';
 
 const ContactPage = () => {
@@ -18,12 +15,9 @@ const ContactPage = () => {
     }
     return (
         <div>
-          <HeadTag tagInfo={HeadTagInfo}/>
-          <Topbar />
-           <NavigationBar />
+           <HeadTag tagInfo={HeadTagInfo}/>
             <Title titleInfo={titleObj}/>
             <Contact />
-           <Footer /> 
         </div>
     );
 };

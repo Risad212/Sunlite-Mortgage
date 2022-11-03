@@ -1,11 +1,8 @@
 import React from 'react';
-import Topbar from '../Layouts/Topbar/Topbar';
-import NavigationBar  from '../Layouts/NavigationBar/NavigationBar';
 import Title from '../Components/Title/Title';
 import ServiceAbout from '../Components/ServiceAbout/ServiceAbout';
 import purImg from '../assets/Media/pur.jpg';
 import Paralax from '../Components/Paralax/Paralax';
-import Footer from '../Layouts/Footer/Footer';
 import Solutation from '../Layouts/Solutation/Solutation';
 import Content from '../Components/Content/Content';
 import HeadTag from '../Components/HeadTag/HeadTag';
@@ -52,15 +49,12 @@ const PurchasePage = () => {
 
     return (
         <div>
-          <HeadTag tagInfo={HeadTagInfo}/>
-          <Topbar />
-          <NavigationBar /> 
+          <HeadTag tagInfo={HeadTagInfo}/> 
           <Title titleInfo={titleObj}/>
           <ServiceAbout abinfo={aboutInfo} />
           <Paralax info={paralaxInfo}/>
           <Content ctInfo={contentInfo}/>
           <Solutation display="block"/>
-          <Footer />
         </div>
     );
 };
