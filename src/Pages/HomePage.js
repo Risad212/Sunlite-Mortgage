@@ -20,12 +20,13 @@ const HomePage = () => {
     return (
         <div>
           <Helmet>
-                <title>home</title>
-                <meta charSet="utf-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="canonical" href="http://mysite.com/example" />
-                <meta name="description" content="welcome about page"/>
+                <title>Mortgage Broker in North York, Toronto, Ontario | Sunlite Mortgage</title>
+                <meta name="description" content="Best Mortgage Broker: At sunlite mortgage, we work with top-class brokers for over three decades and have a clear track record of putting deals and relationships together." />
+                <meta name="keywords" content="Songbad Prokash, Bangla News, Bangla News Paper, Online Bangla News Portal, Breaking News, National News, Country News, Entertainment News, সংবাদ প্রকাশ, জাতীয়, দেশ, আন্তর্জাতিক, বিনোদন, খেলা, জীবনযাপন, 	স্বাস্থ্য, শিক্ষা, বিজ্ঞান ও প্রযুক্তি, প্রবাস, বই শুনুন, চাকরি চাই" />
+                <meta name="author" content="Risad" />
+                <meta name="publisher" content="Publisher" />
+                <link rel="canonical" href="https://sunlitemortgage.ca" />
+                <link rel="alternate" href="https://sunlitemortgage.ca/" />
           </Helmet>
            <Topbar />
            <NavigationBar />

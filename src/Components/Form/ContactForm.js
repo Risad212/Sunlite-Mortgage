@@ -18,7 +18,7 @@ const ContactForm = () => {
     setFormInfo(newFormInfo)
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     fetch('http://localhost:5000/send', {
       method: "POST",
