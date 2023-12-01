@@ -1,0 +1,15 @@
+.slider ul li{
+    margin: .5rem 0;
+}
+.slider ul li i{
+    color: #FEAA36;
+}
+.ctaBtn button a{
+    color: #fff;
+}
+.ctaBtn button:hover a{
+    color: #FEAA36;
+}
+.soltitle .section-title{
+    font-size: 1.5rem;
+}

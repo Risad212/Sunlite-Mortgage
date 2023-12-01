@@ -1,0 +1,66 @@
+.banner{
+    position: relative;
+}
+.banner a img{
+    width: 100%;
+}
+.banner .bannerDes{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+.banner .bannerDes h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.banner .bannerDes button:hover{
+   background: #fff;
+}
+.banner .bannerDes .button:hover a{
+    color: #FEAA36;
+}
+
+@media screen and (max-width: 768px) {
+    .banner .bannerDes{
+        top: 70%;
+    }
+    .banner .bannerDes h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner .bannerDes{
+        top: 60%;
+    }
+    .banner .bannerDes h1{
+        font-size: 25px;
+    }
+}
+
+/*-- refinacne page title style--- */
+.refTitle{
+    position: absolute;
+    top: 32%;
+    left: 74.5%;
+    width: 40%;
+    text-align: left;
+    transform: translate(-50%,-50%);
+}
+
+
+/*-- blog page title style -- */
+.blogTitle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}

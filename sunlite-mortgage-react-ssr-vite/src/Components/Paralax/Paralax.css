@@ -1,0 +1,46 @@
+.Paralax{
+    padding: 5rem 0;
+    background-image: url(../../assets/Media/ser-page-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100% !important;
+}
+
+.Paralax{
+    color: #fff;
+}
+.varLine{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.varLine::after{
+    content: '';
+    position: absolute;
+    background: #feaa36ad;
+    width: 0.5px;
+    height: 330px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.BHeight::after{
+    height: 400px;
+}
+
+.sHeight::after{
+    height: 280px;
+}
+/*-- make responsive -- */
+@media only screen and (min-width: 1366px) {
+    .section-title{
+        font-size: 35px;
+    }
+    .varLine p{
+        font-size: .9rem !important;
+    }
+}
+
